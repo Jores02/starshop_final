@@ -18,4 +18,13 @@ class StarshipRepository
             new Starship(3, 'Serenity', 'Firefly', 'Malcolm Reynolds', 'Retired'),
         ];
     }
+    public function find(int $id): ?Starship
+{
+    foreach ($this->findAll() as $ship) {
+        if ($ship->getId() === $id) {
+            return $ship;
+        }
+    }
+    return null;
+}
 }
