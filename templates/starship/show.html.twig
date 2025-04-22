@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ ship.name }}{% endblock %}
+
+{% block body %}
+    <h1>{{ ship.name }}</h1>
+    <ul>
+        <li><strong>Classe :</strong> {{ ship.class }}</li>
+        <li><strong>Capitaine :</strong> {{ ship.captain }}</li>
+        <li><strong>Status :</strong> {{ ship.status }}</li>
+    </ul>
+
+    <a href="{{ path('homepage') }}">← Retour à l'accueil</a>
+{% endblock %}
