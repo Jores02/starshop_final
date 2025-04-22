@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+</head>
+<body>
+    <h1>Bienvenue dans notre flotte spatiale !</h1>
+
+    <p>Nombre total de vaisseaux : {{ ships|length }}</p>
+
+    <h2>Vaisseau du jour</h2>
+    <ul>
+        <li><strong>Nom :</strong> {{ myShip.name }}</li>
+        <li><strong>Classe :</strong> {{ myShip.class }}</li>
+        <li><strong>Capitaine :</strong> {{ myShip.captain }}</li>
+        <li><strong>Status :</strong> {{ myShip.status }}</li>
+    </ul>
+</body>
+</html>
